@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+.bg_img{
+    flex-basis: 50%;
+    height: 100vh;
+    background-image: url("/spurx_imgs/AUTH_2.png"), linear-gradient(to right,rgb(39, 210, 39), yellow);
+    background-repeat: no-repeat no-repeat;
+    background-size: 170vh 100vh;
+    background-position:  left;
+}
+.container{
+    display: flex;
+}
+img[alt="logo"]{
+    width: 80px;
+    height: 60px;
+    margin: 40px 0px 20px;
+    background: no-repeat;
+}
+.side-container{
+    flex-basis: 50%;
+    text-align: center;
+}
+.login-text{
+    font-size: 33px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form-section{
+    margin-top: 120px;
+}
+input[type="email"]{
+    width: 280px;
+    height: 35px ;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid #C5E0BF;
+    background-color: #F5FFF3 ;
+}
+input[type="password"]{
+    width: 280px;
+    height:35px ;
+    margin-left: 20px;
+    border: 2px solid #C5E0BF;
+    background-color: #F5FFF3 ;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 40px;
+}
+input[type="submit"]{
+    background-color: green;
+    font-size: large;
+    width: 120px;
+    height: 40px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+.form-section >p{
+    font-size: 20px;
+}
+@media only screen and (max-width: 780px) {
+    .bg_img{
+        visibility: hidden;
+        width: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    input[type="email"]{
+        margin-bottom: 1rem;
+    }
+    input[type="password"]{
+        margin-left: 0;
+    }
+}
